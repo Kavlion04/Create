@@ -38,3 +38,7 @@ modal.isHidden();
 
 // true if visible
 modal.isVisible();
+
+
+
+
