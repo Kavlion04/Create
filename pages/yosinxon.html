@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<!-- karusil -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Demo styles -->
+<style>
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  /* body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  } */
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    box-shadow: 0 0 5px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<body>
+    <div class="container mx-auto border px-[150px]">
+        <div class="text-center h-[150px]">
+            <p class="font-normal text-[17px] mt-[50px]">
+                Enjoy your studying!</p>
+            <h1 class="font-bold text-[33px] mt-[30px]">
+                Our online courses</h1>
+        </div>
+        <div class="max-sm:flex-col max-sm:h-auto sm:max-md:flex-wrap sm:max-md:w-[100%] sm:max-md:h-auto lg:h-[100px] lg:mb-[30px] flex justify-between items-center h-[80px] relative">
+            <img class="absolute top-[-100px] right-[-150px]" src="../assets/images/dots.png" alt="">
+            <ul class="max-sm:flex-wrap sm:max-md:flex-wrap sm:max-md:h-[150px] sm:max-md:w-[100%] flex lg:gap-[15px] gap-[20px] list-none font-medium text-[15px] text-[#9A9CA5]">
+                <li class="max-sm:w-[45%] sm:max-md:w-[28%] sm:max-md:text-[14px] lg:w-[70px] lg:text-[12px] h-[45px] p-[10px] hover:border hover:text-[#FF3F3A] ">All <span class="lg:text-[8px] text-[10px]">17</span></li>
+                <li class="max-sm:w-[45%] sm:max-md:w-[28%] sm:max-md:text-[14px] lg:w-[105px] lg:text-[12px] h-[45px] p-[10px] hover:border hover:text-[#FF3F3A]">Marketing <span class="lg:text-[8px] text-[10px]">4</span></li>
+                <li class="max-sm:w-[45%] sm:max-md:w-[28%] sm:max-md:text-[14px] lg:w-[135px] lg:text-[12px] h-[45px] p-[10px] hover:border hover:text-[#FF3F3A]">Management <span class="lg:text-[8px] text-[10px]">3</span></li>
+                <li class="max-sm:w-[45%] sm:max-md:w-[28%] sm:max-md:text-[14px] lg:w-[115px] lg:text-[12px] h-[45px] p-[10px] hover:border hover:text-[#FF3F3A]">HR & Recruting <span class="lg:text-[8px] text-[10px]">5</span></li>
+                <li class="max-sm:w-[45%] sm:max-md:w-[28%] sm:max-md:text-[14px] lg:w-[90px] lg:text-[12px] h-[45px] p-[10px] hover:border hover:text-[#FF3F3A]">Design <span class="lg:text-[8px] text-[10px]">2</span></li>
+                <li class="max-sm:w-[45%] sm:max-md:w-[28%] sm:max-md:text-[14px]  lg:w-[120px] lg:text-[12px] h-[45px] p-[10px] hover:border hover:text-[#FF3F3A]">Development <span class="lg:text-[8px] text-[10px]">3</span></li>
+            </ul>
+            <div class="relative sm:max-md:my-[20px]">
+                <input class="max-sm:mx-auto max-sm:mt-[10px] sm:max-md:mt-[20px] sm:max-md:mx-auto text-[#9A9CA5] w-[300px] px-[20px] border h-[40px]" type="text" placeholder="Search course...">
+                <i class="fa-solid fa-magnifying-glass fa-bounce absolute bottom-[10px] right-[15px]" style="color: cadetblue;"></i>
+            </div>
+        </div>
+
+        <div class="max-sm:h-auto sm:max-md:h-auto h-[1800px]">
+
+            <div class="max-sm:mt-[50px] max-sm:flex-col sm:max-md:flex-col lg:mt-[0px] flex justify-between ">
+
+                <div class="max-sm:mb-[30px] max-sm:w-[100%] sm:max-md:mb-[30px] sm:max-md:w-[83%] sm:max-md:w-[100%] sm:max-md:mx-auto max-sm:mb-[20px] lg:w-[33%] lg:mx-[0px] w-[32%] h-[500px] shadow-lg shadow-slate-1000 relative">
+                    <img class="w-[100%]" src="../assets/images/people1.png" alt="">
+                    <div class="p-[20px]">
+                        <button class="px-[35px] py-[8px] rounded-[7px] text-[#fff] font-medium text-[15px] bg-[#03CEA4] hover:bg-[#D7DADD] hover:text-[#03CEA4]">Marketing</button>
+                        <h1 class="mt-[15px] font-bold text-[20px] font-medium">The Ultimate Google Ads Training Course</h1>
+                        <div class="mt-[60px] flex gap-[6px]">
+                            <p class="sm:text-[18px] font-bold text-[25px] text-[red]">$100</p>
+                            <p class="sm:text-[18px] text-[25px]">| by Jerome Bell</p> 
+                        </div>
+                    </div>
+                    <img class="absolute left-[-130px] bottom-[40px]" src="../assets/images/shapes.png" alt="">
+                </div>
+
+                <div class="max-sm:mb-[30px] max-sm:w-[100%] sm:max-md:mb-[30px] sm:max-md:w-[83%] sm:max-md:w-[100%] sm:max-md:mx-auto max-sm:mb-[20px] lg:w-[33%] lg:mx-[0px] w-[32%] h-[500px] shadow-lg shadow-slate-1000">
+                    <img class="w-[100%]" src="../assets/images/people2.png" alt="">
+                    <div class="p-[20px]">
+                        <button class="px-[35px] py-[8px] rounded-[7px] text-[#fff] font-medium text-[15px] bg-[#5A87FC] hover:bg-[#D7DADD] hover:text-[#03CEA4]">Management</button>
+                        <h1 class="mt-[15px] font-bold text-[20px] font-medium">Prduct Management Fundamentals</h1>
+                        <div class="mt-[87px] flex gap-[6px]">
+                            <p class="max-sm:text-[18px] font-bold text-[25px] text-[red]">$480</p>
+                            <p class="max-sm:text-[18px] text-[25px]">| by Marvin McKinney</p> 
+                        </div>
+                    </div>
+                </div>
+                <div class=" max-sm:mb-[30px] max-sm:w-[100%] sm:max-md:w-[83%] sm:max-md:w-[100%] md:mx-auto max-sm:mb-[20px] lg:w-[33%] lg:mx-[0px] w-[32%] h-[500px] shadow-lg shadow-slate-1000">
+                    <img class="w-[100%]" src="../assets/images/people3.png" alt="">
+                    <div class="p-[20px]">
+                        <button class="px-[35px] py-[8px] rounded-[7px] text-[#fff] font-medium text-[15px] bg-[#F89828] hover:bg-[#D7DADD] hover:text-[#03CEA4]">HR & Recruting</button>
+                        <h1 class="mt-[15px] font-bold text-[20px] font-medium">HR  Management and Analytics</h1>
+                        <div class="mt-[85px] flex gap-[6px]">
+                            <p class="sm:text-[18px] font-bold text-[25px] text-[red]">$200</p>
+                            <p class="max-sm:text-[18px] text-[25px]">| by Leslie Alexander Li</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-sm:flex-col flex justify-between sm:max-md:flex-col">
+
+                <div class="max-sm:mb-[30px] max-sm:w-[100%] sm:max-md:mb-[30px] sm:max-md:w-[83%] sm:max-md:w-[100%] md:mx-auto sm:mb-[20px] lg:w-[33%]  w-[32%] h-[500px] shadow-lg shadow-slate-1000">
+                    <img class="w-[100%]" src="../assets/images/people4.png" alt="">
+                    <div class="p-[20px]">
+                        <button class="px-[35px] py-[8px] rounded-[7px] text-[#fff] font-medium text-[15px] bg-[#03CEA4] hover:bg-[#D7DADD] hover:text-[#03CEA4]">Marketing</button>
+                        <h1 class="mt-[15px] font-bold text-[20px] font-medium">The Ultimate Google Ads Training Course</h1>
+                        <div class="mt-[60px] flex gap-[6px]">
+                            <p class="max-sm:text-[18px] font-bold text-[25px] text-[red]">$100</p>
+                            <p class="mx-sm:text-[18px] text-[25px]">| by Jerome Bell</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="max-sm:mb-[30px] max-sm:w-[100%] sm:max-md:mb-[30px] sm:max-md:w-[83%] sm:max-md:w-[100%] sm:max-md:mx-auto max-sm:mb-[20px] lg:w-[33%] w-[32%] h-[500px] shadow-lg shadow-slate-1000">
+                    <img class="w-[100%]" src="../assets/images/people5.png" alt="">
+                    <div class="p-[20px]">
+                        <button class="px-[35px] py-[8px] rounded-[7px] text-[#fff] font-medium text-[15px] bg-[#F52F6E] hover:bg-[#D7DADD] hover:text-[#03CEA4]">Design</button>
+                        <h1 class="mt-[15px] font-bold text-[20px] font-medium">Prduct Management Fundamentals</h1>
+                        <div class="mt-[87px] flex gap-[6px]">
+                            <p class="max-sm:text-[18px] font-bold text-[25px] text-[red]">$480</p>
+                            <p class="max-sm:text-[18px] text-[25px]">| by Marvin McKinney</p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="max-sm:w-[100%] sm:max-md:w-[83%] sm:max-md:w-[100%] sm:max-md:mx-auto sm:mb-[20px] lg:w-[33%] w-[32%] h-[500px] relative shadow-lg shadow-slate-1000">
+                    <img class="w-[100%]" src="../assets/images/people6.png" alt="">
+                    <div class="p-[20px]">
+                        <button class="px-[35px] py-[8px] rounded-[7px] text-[#fff] font-medium text-[15px] bg-[#5A87FC] hover:bg-[#D7DADD] hover:text-[#03CEA4]">Management</button>
+                        <h1 class="mt-[15px] font-bold text-[20px] font-medium">HR  Management and Analytics</h1>
+                        <div class="mt-[85px] flex gap-[6px]">
+                            <p class="max-sm:text-[18px] font-bold text-[25px] text-[red]">$200</p>
+                            <p class="max-sm:text-[18px] text-[25px]">| by Leslie Alexander Li</p> 
+                        </div>
+                    </div>
+                    <img class="absolute right-[-130px] bottom-[40px]" src="../assets/images/shapes2.png" alt="">
+                </div>
+            </div>
+
+            <div class="max-sm:flex-col flex justify-between sm:max-md:flex-col mt-[30px]">
+
+                <div class="max-sm:mb-[30px] max-sm:w-[100%] sm:max-md:mb-[30px]  sm:max-md:w-[83%]  sm:max-md:w-[100%] sm:max-md:mx-auto sm:mb-[20px] lg:w-[33%] w-[32%] h-[500px] shadow-lg shadow-slate-1000">
+                    <img class="w-[100%]" src="../assets/images/people7.png" alt="">
+                    <div class="p-[20px]">
+                        <button class="px-[35px] py-[8px] rounded-[7px] text-[#fff] font-medium text-[15px] bg-[#7772F1] hover:bg-[#D7DADD] hover:text-[#03CEA4]">Development</button>
+                        <h1 class="mt-[15px] font-bold text-[20px] font-medium">The Ultimate Google Ads Training Course</h1>
+                        <div class="mt-[60px] flex gap-[6px]">
+                            <p class="max-sm:text-[18px] font-bold text-[25px] text-[red]">$100</p>
+                            <p class="max-sm:text-[18px] text-[25px]">| by Jerome Bell</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" max-sm:mb-[30px] max-sm:w-[100%] sm:max-md:mb-[30px]  sm:max-md:w-[83%] sm:max-md:w-[100%] md:mx-auto sm:mb-[20px] lg:w-[33%] w-[32%] h-[500px] shadow-lg shadow-slate-1000">
+                    <img class="w-[100%]" src="../assets/images/people8.png" alt="">
+                    <div class="p-[20px]">
+                        <button class="px-[35px] py-[8px] rounded-[7px] text-[#fff] font-medium text-[15px] bg-[#F89828] hover:bg-[#D7DADD] hover:text-[#03CEA4]">Management</button>
+                        <h1 class="mt-[15px] font-bold text-[20px] font-medium">Prduct Management Fundamentals</h1>
+                        <div class="mt-[87px] flex gap-[6px]">
+                            <p class="max-sm:text-[18px] font-bold text-[25px] text-[red]">$480</p>
+                            <p class="max-sm:text-[18px] text-[25px]">| by Marvin McKinney</p> 
+                        </div>
+                    </div>
+                </div>
+                <div class=" max-sm:mb-[30px] max-sm:w-[100%] sm:max-md:w-[83%] sm:max-md:w-[100%] sm:max-md:mx-auto sm:mb-[20px] lg:w-[33%] w-[32%] h-[500px] shadow-lg shadow-slate-1000">
+                    <img class="w-[100%]" src="../assets/images/people9.png" alt="">
+                    <div class="p-[20px]">
+                        <button class="px-[35px] py-[8px] rounded-[7px] text-[#fff] font-medium text-[15px] bg-[#F52F6E] hover:bg-[#D7DADD] hover:text-[#03CEA4]">HR & Recruting</button>
+                        <h1 class="mt-[15px] font-bold text-[20px] font-medium">HR  Management and Analytics</h1>
+                        <div class="mt-[85px] flex gap-[6px]">
+                            <p class="max-sm:text-[18px] font-bold text-[25px] text-[red]">$200</p>
+                            <p class="max-sm:text-[18px] text-[25px]">| by Leslie Alexander Li</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-[5px] w-[100%] justify-center items-center h-[200px]">
+                <img class="w-[25px] h-[27px] mt-[3px] mr-[5px]" src="../assets/icons/Convert.png" alt="">
+                <h1 class="text-center text-[23px] font-semibold">Load more</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container sm:h-auto sm:pb-[60px] mx-auto text-center bg-[#F4F5F6] h-[690px] relative">
+
+        <p class="pt-[65px] text-[22px]">TESTIMONIALS</p>
+        <h1 class="max-sm:mb-[50px] font-bold text-[35px] mb-[100px]">What our students say</h1>
+
+        
+        <img class="absolute top-[30px] left-[30px]" src="../assets/images/postion1.png" alt="">
+        <img class="absolute top-[50px] right-[800px]" src="../assets/images/postion2.png" alt="">
+        <img class="absolute bottom-[0px] right-[0px]" src="../assets/images/postion3.png" alt="">
+        <img class="absolute bottom-[50px] left-[220px]" src="../assets/images/postion4.png" alt="">
+
+        <div class="max-sm:w-[450px] max-sm:h-[200px] h-[320px] w-[950px] mx-auto bg-[#F4F5F6] w-[100%]">
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide max-sm:w-[250px] w-[450px] p-[25px]">
+                    <div class="flex justify-center items-center mx-auto">
+                        <h1 class="text-[red] text-[55px] font-extrabold mb-[75px] mr-[15px] max-sm:text-[30px]">"</h1>
+                        <p class="max-sm:text-[13px] text-[22px] w-[70%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+                    </div>
+                    <div class="w-[100px] ml-[200px] max-sm:hidden">
+                        <img src="../assets/icons/image.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide max-sm:w-[250px] w-[450px] p-[25px]">
+                    <div class="flex justify-center items-center mx-auto">
+                        <h1 class="text-[red] text-[55px] font-extrabold mb-[75px] mr-[15px] sm:text-[30px]">"</h1>
+                        <p class="max-sm:text-[13px] text-[22px] w-[70%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+                    </div>
+                    <div class="w-[100px] ml-[200px] max-sm:hidden">
+                        <img src="../assets/icons/image.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide  max-sm:w-[250px] w-[450px] p-[25px]">
+                    <div class="flex justify-center items-center mx-auto">
+                        <h1 class="text-[red] text-[55px] font-extrabold mb-[75px] mr-[15px] sm:text-[30px]">"</h1>
+                        <p class="max-sm:text-[13px] text-[22px] w-[70%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+                    </div>
+                    <div class="w-[100px] ml-[200px] max-sm:hidden">
+                        <img src="../assets/icons/image.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide  max-sm:w-[250px] w-[450px] p-[25px]">
+                    <div class="flex justify-center items-center mx-auto">
+                        <h1 class="text-[red] text-[55px] font-extrabold mb-[75px] mr-[15px] sm:text-[30px]">"</h1>
+                        <p class=" max-sm:text-[13px] text-[22px] w-[70%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+                    </div>
+                    <div class="w-[100px] ml-[200px]  max-sm:hidden">
+                        <img src="../assets/icons/image.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide  max-sm:w-[250px] w-[450px] p-[25px]">
+                    <div class="flex justify-center items-center mx-auto">
+                        <h1 class="text-[red] text-[55px] font-extrabold mb-[75px] mr-[15px] sm:text-[30px]">"</h1>
+                        <p class=" max-sm:text-[13px] text-[22px] w-[70%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+                    </div>
+                    <div class="w-[100px] ml-[200px]  max-sm:hidden">
+                        <img src="../assets/icons/image.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </div>
+    <div class="container  max-sm:flex-col  max-sm:pl-[70px] mx-auto flex px-[150px] border">
+        <div class="w-[45%] flex items-center">
+            <div class=""> 
+                <p class="text-[22px] font-semibold">Createx Certificate</p>
+                <h1 class="font-bold text-[50px] w-[500px]">Your expertise will be confirmed</h1>
+                <p class="font-awesome mt-[40px] text-[22px] w-[550px]">We are accredited by international professional organizations and institutes:</p>
+                <div class="flex gap-[30px] mt-[20px]">
+                    <img src="../assets/images/log.png" alt="">
+                    <img src="../assets/images/log1.png" alt="">
+                    <img src="../assets/images/log2.png" alt="">
+                </div>
+            </div>
+        </div>
+      
+        <div class="w-[55%]  max-sm:w-[100%]">
+            <img class=" max-sm:ml-[0px] mt-[65px] ml-[45px] w-[100%]" src="../assets/images/image.png" alt="">
+        </div>
+    </div>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
