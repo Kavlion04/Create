@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">E
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Create</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="../../assets/fonts/logo.png" type="image/x-icon">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+</style>
+
+<body>
+
+
+    <header class="container-xl m-10 flex items-center justify-between">
+        <div class="flex items-center gap-10">
+
+            <a href="../../index.html"><img src="../../assets/fonts/logo.png" alt=""></a>
+            <nav class="font-[Lato] font-bold text-[#424551] flex">
+                <ul class="flex gap-5">
+                    <li class="flex gap-5">
+                        <a href="#">About Us</a>
+                        <a href="../yosinxon.html">Courses</a>
+                        <a href="">Events</a>
+                        <a href="">Blog</a>
+                        <a href="#">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="flex items-center gap-5">
+
+            <button data-modal-target="default-modal" data-modal-toggle="default-modal"
+                class="bg-gradient-to-r from-[#FF3F3A] to-[#F75E05] px-8 p-5 cursor-pointer text-white text-[16px] font-[Lato] font-bold rounded-md hover:bg-gradient-to-r hover:from-[#F75E05] hover:to-[#FF3F3A]  hover:scale-90 transition ease-in-out ">Get
+                consultation</button>
+            <a class="font-[Lato] font-bold text-[#424551] text-[16px] flex items-center gap-2" href=""><img
+                    src="../../assets/icons/Profile.svg" alt=""><a href="">Log in </a>/<a href="">Register</a></a>
+        </div>
+    </header>
+    <script src="../../js/script.js"></script>
+
+
+    <div class="container mx-auto sm:w-[100%]">
+
+        <div class=" text-center">
+            <h1 class="font-[700] text-[20px] pt-[30px]">Our events</h1>
+            <h1 class="font-[900] text-[48px] pb-[50px] sm:text-38px] sm:font-[700]">Lectures, workshops &
+                master-classes</h1>
+        </div>
+
+
+        <div class="w-[1200px] h-[50px] mx-auto flex gap-[30px] mb-[40px] sm:w-[100%]">
+
+            <div class="flex items-center w-[330px] sm:hidden">
+                <h1 class="pr-[20px] font-[700] text-[18px] text-[#424551]">Event category</h1>
+                <div class="w-[160px] h-[45px] rounded-[6px] border flex items-center justify-evenly gap-[35px]">
+                    <h1 class="font-[400] text-[15px] text-[#424551]">all themes</h1>
+                    <i class="fa-solid fa-angle-down fa-bounce fa-sm"></i>
+                </div>
+            </div>
+            <div class="flex items-center w-[250px] sm:hidden">
+                <h1 class="pr-[20px] font-[700] text-[18px] text-[#424551]">Sort by</h1>
+                <div class="w-[160px] h-[45px] rounded-[6px] border flex items-center justify-evenly gap-[35px]">
+                    <h1 class="font-[400] text-[15px] text-[#424551]">newest</h1>
+                    <i class="fa-solid fa-angle-down fa-bounce fa-sm"></i>
+                </div>
+            </div>
+            <div class="flex items-center w-[280px] sm:hidden">
+                <h1 class="pr-[20px] font-[700] text-[18px] text-[#424551]">Show</h1>
+                <div class="w-[75px] h-[45px] rounded-[6px] border flex items-center justify-evenly gap-[6px]">
+                    <h1 class="font-[400] text-[16px] text-[#424551]">9</h1>
+                    <img src="../assets/images/carets.png" alt="carets">
+                </div>
+                <h1 class="font-[400] text-[16px] text-[#424551] pl-[20px]">events per page</h1>
+            </div>
+
+            <div class="flex items-center relative sm:mx-auto">
+                <input class="w-[250px] h-[45px] text-[#9A9CA5] border px-[15px]" type="text"
+                    placeholder="Search event...">
+                <i class="fa-solid fa-magnifying-glass fa-beat fa-sm absolute right-[22px]"></i>
+            </div>
+
+
+        </div>
+
+
+        <div class="w-[1230px] h-auto  mx-auto mt-[30px]">
+
+            <div
+                class="mt-[25px] justify-center rounded-[4px] w-[1230px] h-[130px] hover:scale-[1.03] ease-out duration-300  hover:shadow-lg shadow-black-400/100 border-2 flex items-center gap-[45px] sm:w-[630px] sm:h-[110px] sm:px-[15px] sm:gap-[15px] mx-auto">
+
+                <div class="w-[190px] h-[65px] flex items-center gap-[20px] sm:w-[340px]">
+                    <div class="">
+                        <h1 class="text-[60px] font-[900] text-[#F95613]  sm:text-[50px]">05</h1>
+                    </div>
+                    <div>
+                        <h1 class="font-[700] text-[18px] sm:text-[14px]">August</h1>
+                        <h1 class="font-[500] text-[14px] text-[#787A80] pt-[5px] sm:text-[12px]">11:00 – 12:30</h1>
+                    </div>
+                </div>
+
+                <div class="w-[750px] h-[55px] flex-col items-center sm:w-[100%]">
+                    <h1 class="font-[700] text-[18px] sm:text-[13px]">Formation of the organizational structure of the
+                        company in the face of uncertainty.</h1>
+                    <p class="font-[500] text-[14px] text-[#787A80] pt-[5px] sm:text-[12px]">Onine master-class</p>
+                </div>
+
+                <button
+                    class="mt-[-15px] hover:bg-[#F95613] ease-out duration-300  hover:text-[white] px-[35px] py-[11px] border-2 font-[700] text-[#F95613] border-[#F95613] rounded-[7px] sm:text-[12px] sm:w-[220px] sm:py-[8px] sm:px-[5px]">View
+                    more</button>
+            </div>
+            <div
+                class="mt-[25px] justify-center rounded-[4px] w-[1230px] h-[130px] hover:scale-[1.03] ease-out duration-300  hover:shadow-lg shadow-black-400/100 border-2 flex items-center gap-[45px] sm:w-[630px] sm:h-[110px] sm:px-[15px] sm:gap-[15px] mx-auto">
+
+                <div class="w-[190px] h-[65px] flex items-center gap-[20px] sm:w-[340px]">
+                    <div class="">
+                        <h1 class="text-[60px] font-[900] text-[#F95613] sm:text-[50px]">18</h1>
+                    </div>
+                    <div>
+                        <h1 class="font-[700] text-[18px] sm:text-[14px]">July</h1>
+                        <h1 class="font-[500] text-[14px] text-[#787A80] pt-[5px] sm:text-[12px]">11:00 – 12:30</h1>
+                    </div>
+                </div>
+
+                <div class="w-[750px] h-[55px] flex-col items-center sm:w-[100%]">
+                    <h1 class="font-[700] text-[18px] sm:text-[13px]">Who is a project manager and do I want to be PM?
+                    </h1>
+                    <p class="font-[500] text-[14px] text-[#787A80] pt-[5px]">Onine responsive</p>
+                </div>
+
+                <button
+                    class="mt-[-15px] hover:bg-[#F95613] ease-out duration-300  hover:text-[white] px-[35px] py-[11px] border-2 font-[700] text-[#F95613] border-[#F95613] rounded-[7px] sm:text-[12px] sm:w-[220px] sm:py-[8px] sm:px-[5px]    ">View
+                    more</button>
+            </div>
+            <div
+                class="mt-[25px] justify-center rounded-[4px] w-[1230px] h-[130px] hover:scale-[1.03] ease-out duration-300  hover:shadow-lg shadow-black-400/100 border-2 flex items-center gap-[45px] sm:w-[630px] sm:h-[110px] sm:px-[15px] sm:gap-[15px] mx-auto mx-auto">
+
+                <div class="w-[190px] h-[65px] flex items-center gap-[20px] sm:w-[340px]">
+                    <div class="">
+                        <h1 class="text-[60px] font-[900] text-[#F95613] sm:text-[50px]">11</h1>
+                    </div>
+                    <div>
+                        <h1 class="font-[700] text-[18px] sm:text-[14px]">June</h1>
+                        <h1 class="font-[500] text-[14px] text-[#787A80] pt-[5px] sm:text-[12px]">11:30 – 14:00</h1>
+                    </div>
+                </div>
+
+                <div class="w-[750px] h-[55px] flex-col items-center sm:w-[100%]">
+                    <h1 class="font-[700] text-[18px] sm:text-[13px]">Building a customer service department. Best
+                        Practices a stil.</h1>
+                    <p class="font-[500] text-[14px] text-[#787A80] pt-[5px]">Onine mineckraft</p>
+                </div>
+
+                <button
+                    class="mt-[-15px] hover:bg-[#F95613] ease-out duration-300  hover:text-[white] px-[35px] py-[11px] border-2 font-[700] text-[#F95613] border-[#F95613] rounded-[7px] sm:text-[12px] sm:w-[220px] sm:py-[8px] sm:px-[5px]    ">View
+                    more</button>
+            </div>
+            <div
+                class="mt-[25px] justify-center rounded-[4px] w-[1230px] h-[130px] hover:scale-[1.03] ease-out duration-300  hover:shadow-lg shadow-black-400/100 border-2 flex items-center gap-[45px] sm:w-[630px] sm:h-[110px] sm:px-[15px] sm:gap-[15px] mx-auto">
+
+                <div class="w-[190px] h-[65px] flex items-center gap-[20px] sm:w-[340px]">
+                    <div class="">
+                        <h1 class="text-[60px] font-[900] text-[#F95613] sm:text-[50px]">09</h1>
+                    </div>
+                    <div>
+                        <h1 class="font-[700] text-[18px] sm:text-[14px]">June</h1>
+                        <h1 class="font-[500] text-[14px] text-[#787A80] pt-[5px] sm:text-[12px]">11:00 – 15:00</h1>
+                    </div>
+                </div>
+
+                <div class="w-[750px] h-[55px] flex-col items-center sm:w-[100%]">
+                    <h1 class="font-[700] text-[18px] sm:text-[13px]">Formation of the organizational structure of the
+                        company in the brawl stars yosinxon.</h1>
+                    <p class="font-[500] text-[14px] text-[#787A80] pt-[5px]">Onine master-class</p>
+                </div>
+
+                <button
+                    class="mt-[-15px] hover:bg-[#F95613] ease-out duration-300  hover:text-[white] px-[35px] py-[11px] border-2 font-[700] text-[#F95613] border-[#F95613] rounded-[7px] sm:text-[12px] sm:w-[220px] sm:py-[8px] sm:px-[5px]    ">View
+                    more</button>
+            </div>
+            <div
+                class="mt-[25px] justify-center rounded-[4px] w-[1230px] h-[130px] hover:scale-[1.03] ease-out duration-300  hover:shadow-lg shadow-black-400/100 border-2 flex items-center gap-[45px] sm:w-[630px] sm:h-[110px] sm:px-[15px] sm:gap-[15px] mx-auto">
+
+                <div class="w-[190px] h-[65px] flex items-center gap-[20px] sm:w-[340px]">
+                    <div class="">
+                        <h1 class="text-[60px] font-[900] text-[#F95613] sm:text-[50px]">24</h1>
+                    </div>
+                    <div>
+                        <h1 class="font-[700] text-[18px] sm:text-[14px]">July</h1>
+                        <h1 class="font-[500] text-[14px] text-[#787A80] pt-[5px] sm:text-[12px]">11:00 – 12:30</h1>
+                    </div>
+                </div>
+
+                <div class="w-[750px] h-[55px] flex-col items-center sm:w-[100%]">
+                    <h1 class="font-[700] text-[18px] sm:text-[13px]">Building a customer service department. Best
+                        Practices..</h1>
+                    <p class="font-[500] text-[14px] text-[#787A80] pt-[5px]">Onine lecture</p>
+                </div>
+
+                <button
+                    class="mt-[-15px] hover:bg-[#F95613] ease-out duration-300  hover:text-[white] px-[35px] py-[11px] border-2 font-[700] text-[#F95613] border-[#F95613] rounded-[7px] sm:text-[12px] sm:w-[220px] sm:py-[8px] sm:px-[5px]    ">View
+                    more</button>
+            </div>
+            <div
+                class="mt-[25px] justify-center rounded-[4px] w-[1230px] h-[130px] hover:scale-[1.03] ease-out duration-300  hover:shadow-lg shadow-black-400/100 border-2 flex items-center gap-[45px] sm:w-[630px] sm:h-[110px] sm:px-[15px] sm:gap-[15px] mx-auto">
+
+                <div class="w-[190px] h-[65px] flex items-center gap-[20px] sm:w-[340px]">
+                    <div class="">
+                        <h1 class="text-[60px] font-[900] text-[#F95613] sm:text-[50px]">16</h1>
+                    </div>
+                    <div>
+                        <h1 class="font-[700] text-[18px] sm:text-[14px]">July</h1>
+                        <h1 class="font-[500] text-[14px] text-[#787A80] pt-[5px] sm:text-[12px]">11:00 – 13:00</h1>
+                    </div>
+                </div>
+
+                <div class="w-[750px] h-[55px] flex-col items-center sm:w-[100%]">
+                    <h1 class="font-[700] text-[18px] sm:text-[13px]">How to apply methods of speculative design in
+                        practice. Worldbuilding prototyping.</h1>
+                    <p class="font-[500] text-[14px] text-[#787A80] pt-[5px]">Onine workshop</p>
+                </div>
+
+                <button
+                    class="mt-[-15px] hover:bg-[#F95613] ease-out duration-300  hover:text-[white] px-[35px] py-[11px] border-2 font-[700] text-[#F95613] border-[#F95613] rounded-[7px] sm:text-[12px] sm:w-[220px] sm:py-[8px] sm:px-[5px]    ">View
+                    more</button>
+            </div>
+            <div
+                class="mt-[25px] justify-center rounded-[4px] w-[1230px] h-[130px] hover:scale-[1.03] ease-out duration-300  hover:shadow-lg shadow-black-400/100 border-2 flex items-center gap-[45px] sm:w-[630px] sm:h-[110px] sm:px-[15px] sm:gap-[15px] mx-auto">
+
+                <div class="w-[190px] h-[65px] flex items-center gap-[20px] sm:w-[340px]">
+                    <div class="">
+                        <h1 class="text-[60px] font-[900] text-[#F95613] sm:text-[50px]">27</h1>
+                    </div>
+                    <div>
+                        <h1 class="font-[700] text-[18px sm:text-[14px]]">July</h1>
+                        <h1 class="font-[500] text-[14px] text-[#787A80] pt-[5px] sm:text-[12px]">11:00 – 13:00</h1>
+                    </div>
+                </div>
+
+                <div class="w-[750px] h-[55px] flex-col items-center sm:w-[100%]">
+                    <h1 class="font-[700] text-[18px] sm:text-[13px]">Connection to Microsoft Data Visualization in
+                        Power BI.</h1>
+                    <p class="font-[500] text-[14px] text-[#787A80] pt-[5px]">Onine master-class</p>
+                </div>
+
+                <button
+                    class="mt-[-15px] hover:bg-[#F95613] ease-out duration-300  hover:text-[white] px-[35px] py-[11px] border-2 font-[700] text-[#F95613] border-[#F95613] rounded-[7px] sm:text-[12px] sm:w-[220px] sm:py-[8px] sm:px-[5px]    ">View
+                    more</button>
+            </div>
+            <div
+                class="mt-[25px] justify-center rounded-[4px] w-[1230px] h-[130px] hover:scale-[1.03] ease-out duration-300  hover:shadow-lg shadow-black-400/100 border-2 flex items-center gap-[45px] sm:w-[630px] sm:h-[110px] sm:px-[15px] sm:gap-[15px] mx-auto">
+
+                <div class="w-[190px] h-[65px] flex items-center gap-[20px] sm:w-[340px]">
+                    <div class="">
+                        <h1 class="text-[60px] font-[900] text-[#F95613] sm:text-[50px]">30</h1>
+                    </div>
+                    <div>
+                        <h1 class="font-[700] text-[18px] sm:text-[14px]">May</h1>
+                        <h1 class="font-[500] text-[14px] text-[#787A80] pt-[5px] sm:text-[12px]">15:00 – 19:30</h1>
+                    </div>
+                </div>
+
+                <div class="w-[750px] h-[55px] flex-col items-center sm:w-[100%]">
+                    <h1 class="font-[700] text-[18px] sm:text-[13px]">Marketing or growth hacking: main differences and
+                        what business needs.</h1>
+                    <p class="font-[500] text-[14px] text-[#787A80] pt-[5px]">Onine lacture</p>
+                </div>
+
+                <button
+                    class="mt-[-15px] hover:bg-[#F95613] ease-out duration-300  hover:text-[white] px-[35px] py-[11px] border-2 font-[700] text-[#F95613] border-[#F95613] rounded-[7px] sm:text-[12px] sm:w-[220px] sm:py-[8px] sm:px-[5px]    ">View
+                    more</button>
+            </div>
+            <div
+                class="mt-[25px] justify-center rounded-[4px] w-[1230px] h-[130px] hover:scale-[1.03] ease-out duration-300  hover:shadow-lg shadow-black-400/100 border-2 flex items-center gap-[45px] sm:w-[630px] sm:h-[110px] sm:px-[15px] sm:gap-[15px] mx-auto">
+
+                <div class="w-[190px] h-[65px] flex items-center gap-[20px] sm:w-[340px]">
+                    <div class="">
+                        <h1 class="text-[60px] font-[900] text-[#F95613] sm:text-[50px]">08</h1>
+                    </div>
+                    <div>
+                        <h1 class="font-[700] text-[18px] sm:text-[14px]">May</h1>
+                        <h1 class="font-[500] text-[14px] text-[#787A80] pt-[5px] sm:text-[12px]">07:00 – 09:00</h1>
+                    </div>
+                </div>
+
+                <div class="w-[750px] h-[55px] flex-col items-center sm:w-[100%]">
+                    <h1 class="font-[700] text-[18px] sm:text-[13px]">The company's business page as an additional tool
+                        to support the announcement of vacancies.</h1>
+                    <p class="font-[500] text-[14px] text-[#787A80] pt-[5px]">Onine stendoff</p>
+                </div>
+
+                <button
+                    class="mt-[-15px] hover:bg-[#F95613] ease-out duration-300  hover:text-[white] px-[35px] py-[11px] border-2 font-[700] text-[#F95613] border-[#F95613] rounded-[7px] sm:text-[12px] sm:w-[220px] sm:py-[8px] sm:px-[5px]    ">View
+                    more</button>
+            </div>
+
+        </div>
+
+        <div class="flex justify-center items-center gap-[20px] mt-[80px] mx-auto">
+            <h1 class="font-[700] text-[20px] text-[#424551] hover:text-[#FF3F3A]">1</h1>
+            <h1 class="font-[700] text-[20px] text-[#424551] hover:text-[#FF3F3A]">2</h1>
+            <h1 class="font-[700] text-[20px] text-[#424551] hover:text-[#FF3F3A]">3</h1>
+            <h1 class="font-[700] text-[20px] text-[#424551] hover:text-[#FF3F3A]">4</h1>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
