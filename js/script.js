@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 // set the modal menu element
 const $targetEl = document.getElementById('modalEl');
 
@@ -42,7 +40,6 @@ modal.isHidden();
 modal.isVisible();
 
 
->>>>>>> 06b406f4d88b1b4dd572f0c58b4c08d1b7684961
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
@@ -58,9 +55,6 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-<<<<<<< HEAD
-  });
-=======
-  });  
 
->>>>>>> 06b406f4d88b1b4dd572f0c58b4c08d1b7684961
+  }); 
+
