@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/fonts/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+      body {
+        overflow-x: hidden;
+      }
+      .rounded-t-lg {
+        height: 300px;
+      }
+      .s3__cards {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+          "card1 card2 card3"
+          "card4 card4 card5"
+          "card6 card7 card8";
+      }
+      .card1 {
+        grid-area: card1;
+      }
+      .card2 {
+        grid-area: card2;
+      }
+      .card3 {
+        grid-area: card3;
+      }
+      .card4 {
+        grid-area: card4;
+      }
+      .card5 {
+        grid-area: card5;
+      }
+      .card6 {
+        grid-area: card6;
+      }
+      .card7 {
+        grid-area: card7;
+      }
+      .card8 {
+        grid-area: card8;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container-xl p-10 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="../../index.html"
+          ><img src="../../assets/fonts/logo.png" alt=""
+        /></a>
+        <nav class="font-[Lato] font-bold text-[#424551] flex">
+          <ul class="flex gap-5">
+            <li class="flex gap-5">
+              <a class="text-[#FF3F3A]" href="#">About Us</a>
+              <a href="../yosinxon.html">Courses</a>
+              <a href="">Events</a>
+              <a href="">Blog</a>
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="flex items-center gap-5">
+        <button
+          data-modal-target="default-modal"
+          data-modal-toggle="default-modal"
+          class="bg-gradient-to-r from-[#FF3F3A] to-[#F75E05] px-8 p-5 cursor-pointer text-white text-[16px] font-[Lato] font-bold rounded-md hover:bg-gradient-to-r hover:from-[#F75E05] hover:to-[#FF3F3A] hover:scale-90 transition ease-in-out"
+        >
+          Get consultation
+        </button>
+        <a
+          class="font-[Lato] font-bold text-[#424551] text-[16px] flex items-center gap-2"
+          href=""
+          ><img src="../../assets/icons/Profile.svg" alt="" /><a href=""
+            >Log in </a
+          >/<a href="">Register</a></a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="section-1">
+        <p class="font-normal text-[16px] uppercase mt-[50px] text-center">
+          Our blog
+        </p>
+        <h1 class="font-bold text-[46px] mt-[10px] text-center">
+          Createx School Journal
+        </h1>
+      </section>
+      <section class="section-2 p-10">
+        <div
+          class="max-sm:flex-col max-sm:h-auto sm:max-md:flex-wrap sm:max-md:w-[100%] sm:max-md:h-auto lg:h-[100px] lg:mb-[30px] flex justify-between items-center h-[80px] relative"
+        >
+          <img
+            class="absolute top-[-100px] right-[-150px]"
+            src="../assets/images/dots.png"
+            alt=""
+          />
+          <ul
+            class="max-sm:flex-wrap sm:max-md:flex-wrap sm:max-md:h-[150px] sm:max-md:w-[100%] flex lg:gap-[15px] gap-[20px] list-none font-medium text-[15px] text-[#9A9CA5]"
+          >
+            <li
+              class="max-sm:w-[45%] sm:max-md:w-[28%] sm:max-md:text-[14px] lg:w-[70px] lg:text-[12px] h-[45px] p-[10px] hover:border hover:text-[#FF3F3A] hover:border-[#FF3F3A]"
+            >
+              All
+            </li>
+            <li
+              class="max-sm:w-[45%] sm:max-md:w-[28%] sm:max-md:text-[14px] lg:w-[105px] lg:text-[12px] h-[45px] p-[10px] hover:border hover:text-[#FF3F3A] hover:border-[#FF3F3A]"
+            >
+              Articles
+            </li>
+            <li
+              class="max-sm:w-[45%] sm:max-md:w-[28%] sm:max-md:text-[14px] lg:w-[135px] lg:text-[12px] h-[45px] p-[10px] hover:border hover:text-[#FF3F3A] hover:border-[#FF3F3A]"
+            >
+              Videos
+            </li>
+            <li
+              class="max-sm:w-[45%] sm:max-md:w-[28%] sm:max-md:text-[14px] lg:w-[115px] lg:text-[12px] h-[45px] p-[10px] hover:border hover:text-[#FF3F3A] hover:border-[#FF3F3A]"
+            >
+              Podcasts
+            </li>
+          </ul>
+          <div class="relative sm:max-md:my-[20px] flex items-center gap-8">
+            <div>
+              <form class="max-w-sm mx-auto flex items-center gap-3">
+                <label
+                  for="countries"
+                  class="block mb-2 text-sm font-medium text-black font-black"
+                  >Blog category</label
+                >
+                <select
+                  id="countries"
+                  class="bg-[#FFFFFF] border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 p-3 pr-7"
+                >
+                  <option class="text-gray-400">all themes</option>
+                  <option class="text-gray-400">dark</option>
+                  <option class="text-gray-400">light</option>
+                </select>
+              </form>
+            </div>
+            <input
+              class="max-sm:mx-auto max-sm:mt-[10px] sm:max-md:mt-[20px] sm:max-md:mx-auto text-[#9A9CA5] w-[300px] px-[20px] border h-[40px]"
+              type="text"
+              placeholder="Search blog..."
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-3 px-[250px] mb-[80px]">
+        <div class="s3__cards">
+          <div class="bg-white rounded-lg card1">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/images/blog-img1.png"
+                alt=""
+              />
+            </a>
+
+            <div class="pt-3">
+              <div>
+                <p class="font-[Lato] text-[#787A80]">
+                  Marketing | September 4, 2020 | 36 min
+                </p>
+              </div>
+              <a href="#">
+                <h5
+                  class="mb-2 text-[20px] font-semibold tracking-tight text-gray-900"
+                >
+                  What is traffic arbitrage and does it really make money?
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Pharetra, ullamcorper iaculis viverra parturient sed id sed.
+                Convallis proin dignissim lacus, purus gravida...
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center gap-3 px-3 py-2 text-sm font-medium text-center text-black bg-white-900 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Listen
+                <img src="../assets/icons/Right12.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg card2">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/images/blog-img3.png"
+                alt=""
+              />
+            </a>
+
+            <div class="pt-3">
+              <div>
+                <p class="font-[Lato] text-[#787A80]">
+                  Marketing | September 4, 2020 | 36 min
+                </p>
+              </div>
+              <a href="#">
+                <h5
+                  class="mb-2 text-[20px] font-semibold tracking-tight text-gray-900"
+                >
+                  What is traffic arbitrage and does it really make money?
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Pharetra, ullamcorper iaculis viverra parturient sed id sed.
+                Convallis proin dignissim lacus, purus gravida...
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center gap-3 px-3 py-2 text-sm font-medium text-center text-black bg-white-900 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Listen
+                <img src="../assets/icons/Right12.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg card3">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/images/blog-img4.png"
+                alt=""
+              />
+            </a>
+
+            <div class="pt-3">
+              <div>
+                <p class="font-[Lato] text-[#787A80]">
+                  Marketing | September 4, 2020 | 36 min
+                </p>
+              </div>
+              <a href="#">
+                <h5
+                  class="mb-2 text-[20px] font-semibold tracking-tight text-gray-900"
+                >
+                  What is traffic arbitrage and does it really make money?
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Pharetra, ullamcorper iaculis viverra parturient sed id sed.
+                Convallis proin dignissim lacus, purus gravida...
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center gap-3 px-3 py-2 text-sm font-medium text-center text-black bg-white-900 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Listen
+                <img src="../assets/icons/Right12.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg card4">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/images/blog-img2.png"
+                alt=""
+              />
+            </a>
+
+            <div class="pt-3">
+              <div>
+                <p class="font-[Lato] text-[#787A80]">
+                  Marketing | September 4, 2020 | 36 min
+                </p>
+              </div>
+              <a href="#">
+                <h5
+                  class="mb-2 text-[20px] font-semibold tracking-tight text-gray-900"
+                >
+                  What is traffic arbitrage and does it really make money?
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Pharetra, ullamcorper iaculis viverra parturient sed id sed.
+                Convallis proin dignissim lacus, purus gravida...
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center gap-3 px-3 py-2 text-sm font-medium text-center text-black bg-white-900 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Listen
+                <img src="../assets/icons/Right12.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg card5">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/images/blog-img5.png"
+                alt=""
+              />
+            </a>
+
+            <div class="pt-3">
+              <div>
+                <p class="font-[Lato] text-[#787A80]">
+                  Marketing | September 4, 2020 | 36 min
+                </p>
+              </div>
+              <a href="#">
+                <h5
+                  class="mb-2 text-[20px] font-semibold tracking-tight text-gray-900"
+                >
+                  What is traffic arbitrage and does it really make money?
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Pharetra, ullamcorper iaculis viverra parturient sed id sed.
+                Convallis proin dignissim lacus, purus gravida...
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center gap-3 px-3 py-2 text-sm font-medium text-center text-black bg-white-900 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Listen
+                <img src="../assets/icons/Right12.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg card6">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/images/blog-img6.png"
+                alt=""
+              />
+            </a>
+
+            <div class="pt-3">
+              <div>
+                <p class="font-[Lato] text-[#787A80]">
+                  Marketing | September 4, 2020 | 36 min
+                </p>
+              </div>
+              <a href="#">
+                <h5
+                  class="mb-2 text-[20px] font-semibold tracking-tight text-gray-900"
+                >
+                  What is traffic arbitrage and does it really make money?
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Pharetra, ullamcorper iaculis viverra parturient sed id sed.
+                Convallis proin dignissim lacus, purus gravida...
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center gap-3 px-3 py-2 text-sm font-medium text-center text-black bg-white-900 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Listen
+                <img src="../assets/icons/Right12.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg card7">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/images/blog-img7.png"
+                alt=""
+              />
+            </a>
+
+            <div class="pt-3">
+              <div>
+                <p class="font-[Lato] text-[#787A80]">
+                  Marketing | September 4, 2020 | 36 min
+                </p>
+              </div>
+              <a href="#">
+                <h5
+                  class="mb-2 text-[20px] font-semibold tracking-tight text-gray-900"
+                >
+                  What is traffic arbitrage and does it really make money?
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Pharetra, ullamcorper iaculis viverra parturient sed id sed.
+                Convallis proin dignissim lacus, purus gravida...
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center gap-3 px-3 py-2 text-sm font-medium text-center text-black bg-white-900 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Listen
+                <img src="../assets/icons/Right12.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg card8">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/images/blog-img8.png"
+                alt=""
+              />
+            </a>
+
+            <div class="pt-3">
+              <div>
+                <p class="font-[Lato] text-[#787A80]">
+                  Marketing | September 4, 2020 | 36 min
+                </p>
+              </div>
+              <a href="#">
+                <h5
+                  class="mb-2 text-[20px] font-semibold tracking-tight text-gray-900"
+                >
+                  What is traffic arbitrage and does it really make money?
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Pharetra, ullamcorper iaculis viverra parturient sed id sed.
+                Convallis proin dignissim lacus, purus gravida...
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center gap-3 px-3 py-2 text-sm font-medium text-center text-black bg-white-900 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Listen
+                <img src="../assets/icons/Right12.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#FEDDD0] relative h-[480px]">
+        <div class="container-xl mx-10 py-20 px-32">
+          <div class="flex items-center justify-center gap-2 flex-col">
+            <p class="font-[Lato] font-bold text-[16px] text-[#1E212C]">
+              Don’t miss anything
+            </p>
+            <b class="font-[Lato] font-black text-[40px] text-[#1E212C]"
+              >Subscribe to the Createx School <br />
+              announcements</b
+            >
+            <div class="mt-10">
+              <input
+                placeholder="Your working email"
+                class="border border-white border-2 p-5 rounded-md w-[400px]"
+                type="text"
+              />
+              <button
+                class="bg-[#FF3F3A] px-8 p-5 cursor-pointer text-white text-[16px] font-[Lato] font-bold rounded-md hover:bg-[#F75E05] hover:scale-90 transition ease-in-out mt-10"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            class="absolute bottom-0 left-0"
+            src="../assets/icons/illustration.svg"
+            alt=""
+          />
+          <img
+            class="absolute bottom-0 right-0"
+            src="../assets/icons/illustration (3).png"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="section-8">
+        <footer class="bg-[#1E212C]">
+          <div class="container-xl mx-10">
+            <div class="flex items-center justify-between gap-4">
+              <div>
+                <div class="flex flex-col gap-10">
+                  <img
+                    class="w-[200px] mt-10"
+                    src="../assets/fonts/logo (5).svg"
+                    alt=""
+                  />
+                  <p class="font-[Lato] font-bold text-[16px] text-white">
+                    Createx Online School is a leader in online studying. <br />
+                    We have lots of courses and programs from the main <br />
+                    market experts. We provide relevant approaches <br />
+                    to online learning, internships and employment in the <br />
+                    largest companies in the country.
+                  </p>
+                  <img
+                    class="w-[200px]"
+                    src="../assets/icons/socials.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div>
+                <b class="font-[Lato] font-bold text-[16px] text-white">
+                  SITE MAP
+                </b>
+                <p
+                  class="font-[Lato] font-bold text-[16px] text-white opacity-60"
+                >
+                  About Us <br />
+                  Courses <br />
+                  Events <br />
+                  Blog <br />
+                  Contact
+                </p>
+              </div>
+              <div>
+                <b class="font-[Lato] font-bold text-[16px] text-white"
+                  >COURSES</b
+                >
+                <p
+                  class="font-[Lato] font-bold text-[16px] text-white opacity-60"
+                >
+                  Marketing <br />
+                  Management <br />
+                  Science <br />
+                  IT and Software <br />
+                  Design <br />
+                  Business
+                </p>
+              </div>
+              <div>
+                <b class="font-[Lato] font-bold text-[16px] text-white"
+                  >CONTACT US</b
+                >
+                <p
+                  class="font-[Lato] font-bold text-[16px] text-white opacity-60"
+                >
+                  (405) 555-0128<br />
+                  2Lr5r@example.com
+                </p>
+              </div>
+
+              <div class="flex flex-col">
+                <b class="font-[Lato] font-bold text-[16px] text-white"
+                  >SIGN UP TO OUR NEWSLETTER</b
+                >
+                <input
+                  placeholder="Email address"
+                  class="border border-white opacity-20 border-2 bg-white opacity-15 text-[#FFFFFF] p-2 rounded-md w-[300px]"
+                  type="text"
+                />
+                <p
+                  class="font-[Lato] font-bold text-[16px] text-white opacity-60"
+                >
+                  *Subscribe to our newsletter to receive communications and
+                  early <br />
+                  updates from Createx SEO Agency.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center justify-between mt-20">
+              <p
+                class="font-[Lato] font-bold text-[16px] text-white opacity-60"
+              >
+                © All rights reserved. Made with by Createx Studio
+              </p>
+              <p
+                class="font-[Lato] font-bold text-[16px] text-white opacity-60"
+              >
+                GO TO TOP
+              </p>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
